@@ -58,10 +58,12 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 
 const forLoopTwoToThe = (arr) => {
   // Solution code here...
-  // let newArr4=arr.map(value=>{
-  //   return Math.pow(value, 2)
+  // let newArray=arr.map(value=>{
+  //   return Math.pow(2, value)
   // })
-  // return newArr4;
+  // return newArray;
+
+  //===========
   let newArr4=[]
   for (let i = 0; i < arr.length; i++) {
   
@@ -113,7 +115,7 @@ For example: charCode(['h','i']) returns [104, 105].
 const charCode = (arr) => {
   // Solution code here...
   let newArr7=arr.map(value=>{
-    return value.charCodeAt()
+    return value.charCodeAt()//give us the char code 124 , 
   })
   return newArr7;
 };

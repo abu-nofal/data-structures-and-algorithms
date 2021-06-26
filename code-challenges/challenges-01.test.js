@@ -14,9 +14,10 @@ describe('Testing challenge 1', () => {
 });
 ------------------------------------------------------------------------------------------------ */
 
-let newNumber=[];
+
 const addOne = (arr) => {
   // Solution code here...
+  let newNumber=[];
   arr.forEach((number)=>{
     newNumber.push(number +1)
     
@@ -38,13 +39,13 @@ describe('Testing challenge 2', () => {
   });
 });
 ------------------------------------------------------------------------------------------------ */
-let newArr1=[];
 const addExclamation = (arr) => {
   // Solution code here...
+  let newArray=[];
   arr.forEach(string =>{
-    newArr1.push(string+'!')
+    newArray.push(string+'!')
   })
-  return newArr1 ;
+  return newArray ;
   
 };
 
@@ -56,13 +57,13 @@ Write a function named `allUpperCase` that takes an array of strings, and return
 
 Use `forEach` to loop over the input array. The modified strings should each be added into a local array. Return that local array.
 ------------------------------------------------------------------------------------------------ */
-let newArr2=[];
 const allUpperCase = (arr) => {
   // Solution code here...
+  let newArray=[];
   arr.forEach(string =>{
-    newArr2.push(string.toUpperCase())
+    newArray.push(string.toUpperCase())
   })
-  return newArr2 ;
+  return newArray ;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -86,13 +87,13 @@ const greeting = (word) => {
  let newWord =word.toUpperCase()+'!';
  return newWord;
 };
-let newArr3=[];
 const speaker = (words, callback) => {
   // Solution code here...
+  let newArray=[];
   words.forEach(words=>{
-    newArr3.push(callback(words))
+    newArray.push(callback(words))
   })
-return newArr3;
+return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -184,6 +185,22 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
+  let newArray=[];
+  arr.forEach(value=>{
+    if((value%5 ===0) && (value%3 ===0)){ 
+      newArray.push('Fizz Buzz')
+      
+    }
+    else if(value%5===0){
+      newArray.push('Buzz')
+    } else if (value%3===0){
+      newArray.push('Fizz')
+    }
+    else {
+      newArray.push(value)
+    }
+  })
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -237,7 +254,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   const inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
   test('It should print out messages or numbers', () => {
