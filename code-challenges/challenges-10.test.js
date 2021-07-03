@@ -30,18 +30,17 @@ return: 23
 ------------------------------------------------------------------------------------------------ */
 const findMax = (matrix) => {
   // Solution code here...
-  let x = 0;
-  for (let i = 0; i < matrix.length; i++) {
-    for (let j = 0; j < matrix[i].length; j++) {
-      if (matrix[i][j] > x) {
-        x = matrix[i][j];
+  
 
+  let max=0;
+  matrix.forEach(row=>{
+    row.forEach(col=>{
+      if(col>max){
+        return max=col;
       }
-
-    }
-
-  }
-  return x;
+    })
+  })
+  return max;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -60,25 +59,21 @@ return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
   // Solution code here...
-  let x = 0;
-  for (let i = 0; i < matrix.length; i++) {
-    for (let j = 0; j < matrix[i].length; j++) {
-
-      x += matrix[i][j];
-
-
-
-    }
-
-  }
-  return x;
+  
+  let total=0;
+  matrix.forEach(row=>{
+    row.forEach(col=>{
+      return total+=col;
+    })
+  })
+  return total;
 };
 
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-You friend Pat has a chain of stores around the greater Seattle area. He specializes in selling salmon cookies. Pat has data for the hourly sales of cookies per hour for each store. He wants to create an array of the total number of cookies sold per hour for all of his stores combined.
+Your friend Pat has a chain of stores around the greater Seattle area. He specializes in selling salmon cookies. Pat has data for the hourly sales of cookies per hour for each store. He wants to create an array of the total number of cookies sold per hour for all of his stores combined.
 
 Write a function named grandTotal that adds up the cookies sales for each hour of operation for all of the stores combined. For example, the first element in the hourlySales array should be the sum of the cookies sold in the 9:00 a.m. hour at all five stores combined.
 
@@ -99,15 +94,15 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
   // Solution code here...
-  const hourlySum = [];
+  const totalTotal = [];
   for (let i = 0; i < hoursOpen.length; i++) {
     let total = 0;
     for (let j = 0; j < stores.length; j++) {
       total += stores[j][i];
     }
-    hourlySum.push(total);
+    totalTotal.push(total);
   }
-  return hourlySum;
+  return totalTotal;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -152,8 +147,20 @@ const errands = [
 
 const howManyTreats = (arr) => {
   // Solution code here...
-  let a = arr[2];
-  return a.items[1].quantity;
+  // let a = arr[2];
+  // return a.items[1].quantity;
+
+    let quant=0;
+    arr.forEach(row=>{
+      row.items.forEach(col=>{
+        if(col.name=='Treats'){
+          return  quant=col.quantity
+        }
+      })
+    })
+    return quant;
+
+
 };
 
 /* ------------------------------------------------------------------------------------------------
