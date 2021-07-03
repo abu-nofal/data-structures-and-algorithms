@@ -108,13 +108,15 @@ Here is an example of the input:
 const sortByPrice = (arr) => {
   // Solution code here...
   arr.sort((a, b) => {
-    if (a.price > b.price) {
-      return 1;
-    }
-    if (a.price < b.price) {
-      return -1;
-    }
-    return 0;
+    // if (a.price > b.price) {
+    //   return 1;
+    // }
+    // if (a.price < b.price) {
+    //   return -1;
+    // }
+    // return 0;
+
+    return a.price-b.price;
   });
   return arr;
 };
@@ -129,6 +131,10 @@ For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, an
 
 const alphabetizeBetter = (arr) => {
   // Solution code here...
+  // arr.sort((a,b)=>{
+  //   return a.toUpperCase()-b
+  // })
+  // return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -139,10 +145,10 @@ Write a function named sortByLength that takes in an array of strings and return
 
 const sortByLength = (arr) => {
   // Solution code here...
-  // arr.sort( (a,b) => { 
-  //   return a-b; 
-  // });
-  // return arr 
+  arr.sort( (a,b) => { 
+    return a.length-b.length; 
+  });
+  return arr 
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -312,7 +318,7 @@ xdescribe('Testing challenge 7', () => {
   });
 });
 
-xdescribe('Testing challenge 8', () => {
+describe('Testing challenge 8', () => {
   test('It should sort strings by length', () => {
     const ans = sortByLength(['alphabet', 'Zebra', 'Alphabet', 'carrot']);
     expect(ans.slice(0,2)).toStrictEqual(['Zebra', 'carrot']);
