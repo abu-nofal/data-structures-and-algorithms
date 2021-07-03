@@ -61,8 +61,8 @@ const sortByChildren = (charArray) => {
 
       return 1;
     } else if (a.children.length == b.children.length) {
-      let n = a.house.localeCompare(b.house);
-      return n;
+      return b.house.length-a.house.length
+      
     } else if (a.children.length < b.children.length) {
       return -1;
     } else {
@@ -81,10 +81,10 @@ Write a function named containsW that takes in a string. This function should us
 
 const containsW = (str) => {
   // Solution code here...
-  let result;
+  
   let regex=/w/g
   
-  str.match(regex)?result=true:result=false 
+  let result= str.match(regex)?true:false 
   return result;
 };
 
@@ -119,7 +119,7 @@ const containsWorld = (input) => {
   // Solution code here...
   let result;
   let regex=/world/g
-  regex.test(input)? result= true : result= false
+  input.match(regex)? result= true : result= false
   return result
 };
 
@@ -145,7 +145,7 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 
 const citiesAtoJ = (arr) => {
   // Solution code here...
-  let newArray= arr.filter(value => /^[A-J]/g.test(value));
+  let newArray= arr.filter(value => value.match(/^[A-J]/g));
   return newArray;
 };
 
