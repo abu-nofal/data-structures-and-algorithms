@@ -19,4 +19,4 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 - [README.md](https://github.com/abu-nofal/data-structures-and-algorithms/blob/main/401-code-challenge/code01/README.md)
 
 ### code challenge02 
-- [README.md]()
+- [README.md](https://github.com/abu-nofal/data-structures-and-algorithms/blob/main/401-code-challenge/code02/README.md)
