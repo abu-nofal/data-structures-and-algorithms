@@ -26,23 +26,23 @@ describe('LinkedList Module()', ()=> {
     it('includes() tru',()=>{
         let newList=new LinkedList;
         newList.insert(1);
-        newList.append(2);
-        expect(newList.includes(2)).toEqual(true);
+        newList.append(3);
+        expect(newList.includes(3)).toEqual(true);
     });
     it('include() false',()=>{
         let newList=new LinkedList;
         newList.insert(1);
-        newList.append(2);
-        expect(newList.includes(5)).toEqual(false);
+        newList.append(4);
+        expect(newList.includes(8)).toEqual(false);
     });
 
     // --------to test the toString method 
 
     it('toString()',()=>{
         let newList=new LinkedList;
-        newList.insert(1);
-        newList.append(2);
-        expect(newList.toString()).toEqual('{1}-->{2}-->NULL');
+        newList.insert(7);
+        newList.append(3);
+        expect(newList.toString()).toEqual('{7}-->{3}-->null');
     });
     it('toString() not exisit',()=>{
         let newList=new LinkedList;
@@ -60,9 +60,9 @@ describe('LinkedList Module()', ()=> {
     });
     it('insert() many node',()=>{
         let newList=new LinkedList;
-        newList.insert(1);
-        newList.append(2);
-        expect(newList.head.value).toEqual(1);
-        expect(newList.head.next.value).toEqual(2);
+        newList.insert(3);
+        newList.append(5);
+        expect(newList.head.value).toEqual(3);
+        expect(newList.head.next.value).toEqual(5);
     });
 });
