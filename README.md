@@ -31,3 +31,8 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 
 ### code challenge05
 - [README.md](https://github.com/abu-nofal/data-structures-and-algorithms/blob/main/401-code-challenge/code05)
+
+### code challenge06
+- [README.md](https://github.com/abu-nofal/data-structures-and-algorithms/blob/main/401-code-challenge/code06/README.md)
+
+
