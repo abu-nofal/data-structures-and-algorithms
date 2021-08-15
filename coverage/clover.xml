@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1628965870734" clover="3.2.0">
-  <project timestamp="1628965870734" name="All files">
-    <metrics statements="46" coveredstatements="43" conditionals="8" coveredconditionals="7" methods="7" coveredmethods="7" elements="61" coveredelements="57" complexity="0" loc="46" ncloc="46" packages="3" files="4" classes="4"/>
+<coverage generated="1629046641885" clover="3.2.0">
+  <project timestamp="1629046641885" name="All files">
+    <metrics statements="110" coveredstatements="101" conditionals="22" coveredconditionals="17" methods="15" coveredmethods="15" elements="147" coveredelements="133" complexity="0" loc="110" ncloc="110" packages="4" files="6" classes="6"/>
     <package name="401-code-challenge.code05">
-      <metrics statements="42" coveredstatements="39" conditionals="8" coveredconditionals="7" methods="6" coveredmethods="6"/>
+      <metrics statements="42" coveredstatements="38" conditionals="8" coveredconditionals="6" methods="6" coveredmethods="6"/>
       <file name="linkedlist.js" path="/home/abu-nofal/code301/data-structures-and-algorithms/401-code-challenge/code05/linkedlist.js">
-        <metrics statements="39" coveredstatements="36" conditionals="8" coveredconditionals="7" methods="5" coveredmethods="5"/>
+        <metrics statements="39" coveredstatements="35" conditionals="8" coveredconditionals="6" methods="5" coveredmethods="5"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="7" count="9" type="stmt"/>
-        <line num="8" count="9" type="stmt"/>
-        <line num="9" count="9" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="8" count="8" type="stmt"/>
+        <line num="9" count="8" type="stmt"/>
         <line num="14" count="6" type="stmt"/>
         <line num="15" count="6" type="cond" truecount="1" falsecount="1"/>
         <line num="16" count="6" type="stmt"/>
@@ -31,9 +31,9 @@
         <line num="45" count="2" type="stmt"/>
         <line num="47" count="4" type="stmt"/>
         <line num="49" count="1" type="stmt"/>
-        <line num="53" count="3" type="stmt"/>
-        <line num="54" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="55" count="1" type="stmt"/>
+        <line num="53" count="2" type="stmt"/>
+        <line num="54" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="55" count="0" type="stmt"/>
         <line num="58" count="2" type="stmt"/>
         <line num="59" count="2" type="stmt"/>
         <line num="60" count="4" type="stmt"/>
@@ -48,8 +48,81 @@
       </file>
       <file name="node.js" path="/home/abu-nofal/code301/data-structures-and-algorithms/401-code-challenge/code05/node.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="14" type="stmt"/>
-        <line num="4" count="14" type="stmt"/>
+        <line num="3" count="13" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="401-code-challenge.code06">
+      <metrics statements="64" coveredstatements="59" conditionals="14" coveredconditionals="11" methods="8" coveredmethods="8"/>
+      <file name="linkedlist.js" path="/home/abu-nofal/code301/data-structures-and-algorithms/401-code-challenge/code06/linkedlist.js">
+        <metrics statements="61" coveredstatements="56" conditionals="14" coveredconditionals="11" methods="7" coveredmethods="7"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="14" count="8" type="stmt"/>
+        <line num="15" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="8" type="stmt"/>
+        <line num="17" count="8" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
+        <line num="24" count="8" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="30" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="35" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="37" count="3" type="stmt"/>
+        <line num="38" count="3" type="stmt"/>
+        <line num="40" count="3" type="stmt"/>
+        <line num="48" count="3" type="stmt"/>
+        <line num="49" count="3" type="stmt"/>
+        <line num="50" count="3" type="stmt"/>
+        <line num="51" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="52" count="3" type="stmt"/>
+        <line num="53" count="3" type="stmt"/>
+        <line num="54" count="3" type="stmt"/>
+        <line num="56" count="3" type="stmt"/>
+        <line num="61" count="13" type="stmt"/>
+        <line num="62" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="66" count="12" type="stmt"/>
+        <line num="67" count="12" type="stmt"/>
+        <line num="68" count="4" type="stmt"/>
+        <line num="70" count="12" type="stmt"/>
+        <line num="75" count="3" type="stmt"/>
+        <line num="76" count="3" type="stmt"/>
+        <line num="77" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="78" count="2" type="stmt"/>
+        <line num="80" count="4" type="stmt"/>
+        <line num="82" count="1" type="stmt"/>
+        <line num="86" count="2" type="stmt"/>
+        <line num="87" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="88" count="0" type="stmt"/>
+        <line num="91" count="2" type="stmt"/>
+        <line num="92" count="2" type="stmt"/>
+        <line num="93" count="10" type="stmt"/>
+        <line num="94" count="10" type="stmt"/>
+        <line num="96" count="2" type="stmt"/>
+        <line num="100" count="1" type="stmt"/>
+        <line num="101" count="1" type="stmt"/>
+        <line num="102" count="1" type="stmt"/>
+        <line num="103" count="1" type="stmt"/>
+        <line num="104" count="1" type="stmt"/>
+        <line num="105" count="1" type="stmt"/>
+        <line num="108" count="1" type="stmt"/>
+        <line num="109" count="1" type="stmt"/>
+        <line num="112" count="1" type="stmt"/>
+      </file>
+      <file name="node.js" path="/home/abu-nofal/code301/data-structures-and-algorithms/401-code-challenge/code06/node.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="28" type="stmt"/>
+        <line num="4" count="28" type="stmt"/>
         <line num="8" count="2" type="stmt"/>
       </file>
     </package>

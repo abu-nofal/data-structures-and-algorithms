@@ -38,15 +38,15 @@ describe('LinkedList Module()', ()=> {
 
     // --------to test the toString method 
 
-    
-
     it('toString()',()=>{
         let newList=new LinkedList;
-        newList.insert(7);
+        newList.insert(1);
+        newList.append(2);
         newList.append(3);
-        expect(newList.toString()).toEqual('{7}--->{3}--->null');
+        newList.insertBefore(3,6);
+        newList.insertAfter(2,5);
+        expect(newList.toString()).toEqual('{1}--->{2}--->{5}--->{6}--->{3}--->null');
     });
-  
 
 
     // -------to test the insert method 
@@ -64,17 +64,30 @@ describe('LinkedList Module()', ()=> {
         expect(newList.head.next.value).toEqual(5);
     });
 
+
     // -------to test the insertBefore method 
 
-    // it('insertBefore()' ,()=>{
-    //     let newOne=new LinkedList();
-    //     newOne.insert(1);
-    //     newOne.append(2);
-    //     newOne.append(3);
-    //     newOne.insertBefore(3,6);
-    //     console.log(newOne.head.next.value)
-    //     console.log(newOne.head.value)
-    //     expect(newOne.head.value).toEqual(1)
-    //     expect(newOne.head.next.value).toEqual(6)
-    // })
+    it('insertBefore()' ,()=>{
+        let newOne=new LinkedList();
+        newOne.insert(1);
+        newOne.append(2);
+        newOne.append(3);
+        newOne.insertBefore(3,6);
+        console.log(newOne.head.next.next.value)
+        console.log(newOne.head.value)
+        expect(newOne.head.value).toEqual(1)
+        expect(newOne.head.next.next.value).toEqual(6)
+    })
+
+    it('insertAfter() ', ()=>{
+        let newOne=new LinkedList();
+        newOne.insert(1);
+        newOne.append(2);
+        newOne.append(3);
+        newOne.insertAfter(2,5);
+        console.log(newOne.head.next.next.value)
+        console.log(newOne.head.value)
+        expect(newOne.head.value).toEqual(1)
+        expect(newOne.head.next.next.value).toEqual(5)
+    })
 });
