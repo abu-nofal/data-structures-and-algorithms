@@ -44,6 +44,7 @@ class Stack{
 
 
 
-// console.log(one.peek())
+// // console.log(one)
+// // console.log(one.peek())
 // console.log(one.isEmpty())
 module.exports=Stack
