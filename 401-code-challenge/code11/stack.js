@@ -9,9 +9,13 @@ class Stack{
 
     push(value){
         let newNode=new Node(value)
-        
-        newNode.next=this.top
+        if(this.top){
+            newNode.next=this.top
+            this.top=newNode
+        }
         this.top=newNode
+
+        
     }
 
     pop(){
@@ -35,7 +39,6 @@ class Stack{
     }
 
 }
-
 // let one=new Stack()
 // one.push(1)
 // one.push(3)
@@ -44,7 +47,10 @@ class Stack{
 
 
 
-// // console.log(one)
-// // console.log(one.peek())
+// console.log(one)
+// console.log(one.peek())
 // console.log(one.isEmpty())
-module.exports=Stack
+
+
+
+module.exports = Stack;
