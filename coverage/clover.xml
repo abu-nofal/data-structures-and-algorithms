@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1629731294443" clover="3.2.0">
-  <project timestamp="1629731294443" name="All files">
-    <metrics statements="298" coveredstatements="283" conditionals="90" coveredconditionals="74" methods="53" coveredmethods="53" elements="441" coveredelements="410" complexity="0" loc="298" ncloc="298" packages="9" files="19" classes="19"/>
+<coverage generated="1629838017677" clover="3.2.0">
+  <project timestamp="1629838017677" name="All files">
+    <metrics statements="312" coveredstatements="297" conditionals="94" coveredconditionals="78" methods="54" coveredmethods="54" elements="460" coveredelements="429" complexity="0" loc="312" ncloc="312" packages="10" files="20" classes="20"/>
     <package name="401-code-challenge.code05">
       <metrics statements="42" coveredstatements="38" conditionals="8" coveredconditionals="6" methods="6" coveredmethods="6"/>
       <file name="linkedlist.js" path="/home/abu-nofal/code301/data-structures-and-algorithms/401-code-challenge/code05/linkedlist.js">
@@ -366,6 +366,26 @@
         <line num="3" count="17" type="stmt"/>
         <line num="4" count="17" type="stmt"/>
         <line num="8" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="401-code-challenge.code13">
+      <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="stack-queue-brackets.js" path="/home/abu-nofal/code301/data-structures-and-algorithms/401-code-challenge/code13/stack-queue-brackets.js">
+        <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="13" count="24" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="13" type="stmt"/>
+        <line num="16" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
       </file>
     </package>
     <package name="javascript.code-challenges.reverse-ll">
