@@ -9,9 +9,35 @@ describe("validateBrackets ", () => {
        
         expect(test).toBe(true);
       });
+    it(" brackets in the string are balanced", () => {
+        let test = validateBrackets('{}')
+       
+        expect(test).toBe(true);
+      });
+    it(" brackets in the string are balanced", () => {
+        let test = validateBrackets('{}[]()')
+       
+        expect(test).toBe(true);
+      });
+    it(" brackets in the string are balanced", () => {
+        let test = validateBrackets('(){}[[]]')
+       
+        expect(test).toBe(true);
+      });
+    
 
       it(" brackets in the string are not balanced", () => {
         let test = validateBrackets('[({}]')
+       
+        expect(test).toBe(false);
+      });
+      it(" brackets in the string are not balanced", () => {
+        let test = validateBrackets('(](')
+       
+        expect(test).toBe(false);
+      });
+      it(" brackets in the string are not balanced", () => {
+        let test = validateBrackets('{(})')
        
         expect(test).toBe(false);
       });
