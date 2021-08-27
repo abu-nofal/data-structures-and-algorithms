@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1629923242360" clover="3.2.0">
-  <project timestamp="1629923242360" name="All files">
+<coverage generated="1630065044809" clover="3.2.0">
+  <project timestamp="1630065044809" name="All files">
     <metrics statements="320" coveredstatements="305" conditionals="98" coveredconditionals="81" methods="55" coveredmethods="55" elements="473" coveredelements="441" complexity="0" loc="320" ncloc="320" packages="11" files="21" classes="21"/>
     <package name="401-code-challenge.code05">
       <metrics statements="42" coveredstatements="38" conditionals="8" coveredconditionals="6" methods="6" coveredmethods="6"/>
@@ -373,14 +373,14 @@
       <file name="stack-queue-brackets.js" path="/home/abu-nofal/code301/data-structures-and-algorithms/401-code-challenge/code13/stack-queue-brackets.js">
         <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="13" count="11" type="cond" truecount="2" falsecount="0"/>
-        <line num="14" count="6" type="stmt"/>
-        <line num="16" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
+        <line num="5" count="7" type="stmt"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="11" count="7" type="stmt"/>
+        <line num="13" count="32" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="17" type="stmt"/>
+        <line num="16" count="15" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
         <line num="30" count="1" type="stmt"/>
       </file>
     </package>
