@@ -55,8 +55,8 @@ describe('Binary Tree', ()=>{
 
     it('postOrder', ()=> {
         let expectedOutput = [8, 9, 7, 6, 2, 4, 5, 3, 1];
-        let postOrder = tree.postOrder();
-        console.log("postOrder output ---->", postOrder);
+        let postOrder = tree.postOrder()  //? 
+        console.log("postOrder output ---->", postOrder)
         expect(postOrder).toEqual(expectedOutput);
     });
 
