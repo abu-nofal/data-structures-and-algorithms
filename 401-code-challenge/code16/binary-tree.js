@@ -64,34 +64,63 @@ class BinaryTree {
     findMax(this.root)
     return result
 }
+ 
 
 
 }
+let fizzBuzz = (tree) => {
+    let current = tree.root;
+    let result = [];
+    if (!current) return -1;
+    let trevers = (node) => {
+      if (node.value % 3 == 0 && node.value % 5 == 0) {
+        node.value = "fizzBuzz";
+        result.push(node.value);
+      } else if (node.value % 3 == 0) {
+        node.value = "fizz";
+        result.push(node.value);
+      } else if ((node.value & 5) == 0) {
+        node.value = "buzz";
+        result.push(node.value);
+      } else {
+        result.push(node.value.toString());
+      }
+  
+      if (node.left) trevers(node.left);
+      if (node.right) trevers(node.right);
+    };
+    trevers(current);
+    return result;
+  };
 
 
-// let one = new Node(1);
-//         let two = new Node(2);
-//         let three = new Node(3);
-//         let four = new Node(4);
-//         let five = new Node(5);
-//         let six = new Node(6);
-//         let seven = new Node(7);
-//         let eight = new Node(8);
-//         let nine = new Node(9);
 
-//         one.left = two;
-//         one.right = three;
-//         two.left = six;
-//         six.right = seven;
-//         seven.left = eight;
-//         seven.right = nine;
-//         three.left = four;
-//         three.right = five;
 
-//        let tree = new BinaryTree(one);
 
-// console.log(tree);
-// console.log(levelOrder(tree));
+let one = new Node(1);
+        let two = new Node(2);
+        let three = new Node(3);
+        let four = new Node(4);
+        let five = new Node(5);
+        let six = new Node(6);
+        let seven = new Node(7);
+        let eight = new Node(15);
+        let nine = new Node(9);
+
+        one.left = two;
+        one.right = three;
+        two.left = six;
+        six.right = seven;
+        seven.left = eight;
+        seven.right = nine;
+        three.left = four;
+        three.right = five;
+
+       let tree = new BinaryTree(one);
+
+console.log(tree);
+console.log(levelOrder(tree));
+console.log(fizzBuzz(tree));
 
 module.exports = BinaryTree;
 
