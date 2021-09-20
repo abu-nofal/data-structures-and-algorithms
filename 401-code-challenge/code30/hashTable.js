@@ -72,14 +72,28 @@ this.map=new Array(size)
       }
 
     }
+    repeatedWord(string) {
+        const arr = string.split(/[ ,]+/);
+        let key;
+        let hash;
+        for (let i = 0; i < arr.length; i++) {
+          key = arr[i].toLowerCase();
+          this.add(key, "noValue");
+          hash = this.hash(key);
+          if (this.map[hash].head.next) {
+            return key;
+          }
+        }
+      }
 
 
 }
-// const hashmap = new Hashmap(1024);
-// hashmap.add("name", "Samah");
-// hashmap.add("age", 23);
-// hashmap.add("cat", "Kitty");
-// hashmap.add("act", "Jonny Depp");
+let str='ahmad ahmad ahmad ahmad hello hello ahmad you are more welcome ahmad  ahmad ahmad welcome aguan hello'
+const hashmap = new Hashmap(1024);
+hashmap.add("name", "Samah");
+hashmap.add("age", 23);
+hashmap.add("cat", "Kitty");
+hashmap.add("act", "Jonny Depp");
 
 // console.log("a", hashmap);
 // console.log("b", hashmap.map[871]);
@@ -89,5 +103,6 @@ this.map=new Array(size)
 
 // console.log("get method", hashmap.get("act"));
 // console.log("get method", hashmap.contain("age"));
+console.log("sss", hashmap.repeatedWord(str));
 
 module.exports = Hashmap;
