@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1632929014118" clover="3.2.0">
-  <project timestamp="1632929014118" name="All files">
-    <metrics statements="885" coveredstatements="740" conditionals="330" coveredconditionals="231" methods="150" coveredmethods="130" elements="1365" coveredelements="1101" complexity="0" loc="885" ncloc="885" packages="25" files="44" classes="44"/>
+<coverage generated="1632929641612" clover="3.2.0">
+  <project timestamp="1632929641612" name="All files">
+    <metrics statements="940" coveredstatements="759" conditionals="342" coveredconditionals="238" methods="162" coveredmethods="135" elements="1444" coveredelements="1132" complexity="0" loc="940" ncloc="940" packages="26" files="47" classes="47"/>
     <package name="401-code-challenge.code05">
       <metrics statements="42" coveredstatements="38" conditionals="8" coveredconditionals="6" methods="6" coveredmethods="6"/>
       <file name="linkedlist.js" path="/home/abu-nofal/code301/data-structures-and-algorithms/401-code-challenge/code05/linkedlist.js">
@@ -1076,6 +1076,73 @@
         <line num="25" count="2" type="stmt"/>
         <line num="28" count="4" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="401-code-challenge.code38">
+      <metrics statements="55" coveredstatements="19" conditionals="12" coveredconditionals="7" methods="12" coveredmethods="5"/>
+      <file name="edge.js" path="/home/abu-nofal/code301/data-structures-and-algorithms/401-code-challenge/code38/edge.js">
+        <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="4" count="18" type="stmt"/>
+        <line num="5" count="18" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+      </file>
+      <file name="graphDepthFirst.js" path="/home/abu-nofal/code301/data-structures-and-algorithms/401-code-challenge/code38/graphDepthFirst.js">
+        <metrics statements="50" coveredstatements="15" conditionals="11" coveredconditionals="6" methods="10" coveredmethods="4"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
+        <line num="15" count="18" type="cond" truecount="3" falsecount="1"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="18" type="stmt"/>
+        <line num="19" count="18" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="29" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="72" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="87" count="8" type="stmt"/>
+        <line num="89" count="8" type="stmt"/>
+        <line num="91" count="8" type="stmt"/>
+        <line num="92" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="93" count="7" type="stmt"/>
+        <line num="97" count="8" type="stmt"/>
+        <line num="98" count="8" type="stmt"/>
+        <line num="104" count="1" type="stmt"/>
+      </file>
+      <file name="vertex.js" path="/home/abu-nofal/code301/data-structures-and-algorithms/401-code-challenge/code38/vertex.js">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
       </file>
     </package>
     <package name="javascript.code-challenges.reverse-ll">
